@@ -22,9 +22,11 @@ def is_prime(n):
 def print_prime_factors(n):
     factors = []
     divisor = 2
+    original_n = n
     while n > 1:
         while n % divisor == 0:
             factors.append(divisor)
             n //= divisor
         divisor += 1
-    print(f"{n} = {' * '.join(map(str, factors))}")
+    print(f"{original_n} = {' * '.join(map(str, factors))}")
+
