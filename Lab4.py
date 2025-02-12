@@ -28,3 +28,4 @@ def print_prime_factors(n):
             n //= divisor
         divisor += 1
     print(f"{n} = {' * '.join(map(str, factors))}")
+print(fibonacci(100))
